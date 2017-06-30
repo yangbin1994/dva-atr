@@ -8,12 +8,12 @@ export default modelCtr(({ actionCtr }) => ({
   state: {},
 
   subscriptions: {
-    setup({ dispatch, history }) {  // eslint-disable-line
+    listen({ dispatch, history }) {
       dispatch(actionCtr.set({
         path: 'type',
         value: 'change'
       }))
-    },
+    }
   }
 
 }))

@@ -1,5 +1,5 @@
 import { fromJS } from 'immutable'
-import { actionCtrCreatorByModel } from './action'
+import { actionCtrCreatorByModel, actionCtrCenter } from './action'
 import _ from 'lodash'
 
 const handlePath = path => {
@@ -67,7 +67,7 @@ const modelCreator = ({ namespace, state = {}, reducers, effects, subscriptions 
 
 export const modelCtr = modelMaker => {
     let actionCtr = {}
-    const model = modelMaker({ actionCtr })
+    const model = modelMaker({ actionCtr, actionCtrCenter })
     _.assign(actionCtr, actionCtrCreatorByModel(model, false))
     const distModel = modelCreator(model, actionCtrCreatorByModel(model))
     return distModel
