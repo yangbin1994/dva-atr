@@ -1,6 +1,22 @@
 # dva-atr
 对于dva`无侵入开发`
 
+# 使用
+
+```bash
+npm install dva-atr
+```
+
+```bash
+yarn add dva-atr
+```
+
+```javascript
+import { modelCtr, actionCtrCenter } from 'dva-atr'
+```
+
+
+
 # 创建model
 
 ```javascript
