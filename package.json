@@ -18,7 +18,7 @@
     "dva",
     "antd"
   ],
-  "author": "binyang",
+  "author": "yangbin1994",
   "license": "MIT",
   "dependencies": {
     "babel": "^6.23.0",
