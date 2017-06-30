@@ -4,11 +4,11 @@
 # 使用
 
 ```bash
-npm install dva-atr
+$ npm install dva-atr
 ```
 
 ```bash
-yarn add dva-atr
+$ yarn add dva-atr
 ```
 
 ```javascript
