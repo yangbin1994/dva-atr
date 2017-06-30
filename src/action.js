@@ -7,7 +7,7 @@ export const actionCtrCenter = {}
 
 export const actionCtrCreator = (prefix, actionNames, hasPrefix = true) => {
     const dist = {}
-    _.forEach(['set', 'setMutil', 'reset', 'resetMutil', 'update', ...actionNames], actionName => {
+    _.forEach(['set', 'setMulti', 'reset', 'resetMulti', 'update', ...actionNames], actionName => {
         dist[actionName] = payload => {
             return {
                 type: (hasPrefix ? (prefix + '/') : '') + actionName,

@@ -44,7 +44,7 @@ const modelCreator = ({ namespace, state = {}, reducers, effects, subscriptions 
                 path = handlePath(path)
                 return state.setIn(path, initialModel.getIn(path))
             },
-            resetMutil(state, { payload: { path } }) {
+            resetMulti(state, { payload: { path } }) {
                 path = handlePath(path)
                 return _.reduce(path, (state, path) => state.setIn(path, initialModel.getIn(path)), state)
             },
@@ -52,7 +52,7 @@ const modelCreator = ({ namespace, state = {}, reducers, effects, subscriptions 
                 path = handlePath(path)
                 return state.setIn(path, value)
             },
-            setMutil(state, { payload: { path, value } }) {
+            setMulti(state, { payload: { path, value } }) {
                 path = handlePath(path)
                 return _.reduce(path, (state, path, index) => state.setIn(path, value[index]), state)
             },

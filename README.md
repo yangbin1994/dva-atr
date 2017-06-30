@@ -76,9 +76,9 @@ export default modelCtr(({ actionCtr, actionCtrCenter }) => ({
 |名称|说明|
 |-- |-- |
 |set|设置`path`路径下的`value`为新值|
-|setMutil|一次性设置多次，只触发一次渲染|
+|setMulti|一次性设置多次，只触发一次渲染|
 |reset|重置`path`路径下的model为初始化值(modelCtr创建时候，返回的state)|
-|resetMutil|一次性重置多次，只触发一次渲染|
+|resetMulti|一次性重置多次，只触发一次渲染|
 |update|更新`path`路径下的model，`deal`字段为函数`oldModel => newModel`|
 
 ```javascript
