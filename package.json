@@ -1,12 +1,25 @@
 {
-  "main": "dist/index.js",
-  "module": "src/index.js",
   "scripts": {
     "build": "rimraf dist && webpack --progress --profile --colors --config ./build/webpack.prod.js",
     "build:dev": "webpack --progress --profile --colors --config ./build/webpack.dev.js",
     "test": "./node_modules/.bin/karma start",
     "doc": "gitbook serve ./doc"
   },
+  "name": "dva-atr",
+  "version": "1.1.0",
+  "description": "基于dva和immutable.js的model创建工具",
+  "main": "dist/index.js",
+  "repository": {
+    "url": "https://github.com/yangbin1994/dva-atr",
+    "type": "git"
+  },
+  "bugs": "https://github.com/yangbin1994/dva-atr/issues",
+  "keywords": [
+    "dva",
+    "antd"
+  ],
+  "author": "binyang",
+  "license": "MIT",
   "dependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.24.1",
