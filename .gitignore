@@ -4,7 +4,7 @@
 /node_modules
 
 # production
-/dist
+/dva-pro
 
 # misc
 .idea
