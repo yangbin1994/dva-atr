@@ -1,7 +1,8 @@
 # dva-atr
-对于dva`无侵入开发`
+对于dva的model进行了扩展
 
 # 使用
+[使用前一定要看](https://github.com/dvajs/dva/issues/886#issuecomment-317941549)
 
 ```bash
 $ npm install dva-atr
